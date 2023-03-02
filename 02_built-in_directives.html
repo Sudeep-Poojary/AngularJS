@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>  
+  <head>  
+      <title>AngularJS Directives</title>  
+   </head>  
+     
+   <body>  
+      <h1>AngularJS Application using Directives</h1>  
+        
+      <div ng-app = "" ng-init = "sneakers = [{model:'Air Jordan',brand:'Nike'}, {model:'Chuck Taylor',brand:'Converse'}, {model:'RX-S',brand:'Puma'}, {model:'Classics',brand:'Reebok'}]">   
+
+         <p>Enter your Name: <input type = "text" ng-model = "name"></p>  
+
+         <p><strong>Hello <span ng-bind = "name"></span>!</strong></p>
+           
+         <p>List of Sneaker brands with model:</p>  
+        
+         <ol>  
+            <li ng-repeat = "sneaker in sneakers">  
+               {{ 'Brand: ' + sneaker.brand + ', Model: ' + sneaker.model }}  
+            </li>  
+         </ol>  
+      </div>  
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>  
+         </body>  
+</html>  
+
+ 
