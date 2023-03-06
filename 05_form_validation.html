@@ -169,29 +169,6 @@
                         class="help-block">Enter a valid contactno.</p>
                 </div>
 
-                <!-- COUNTRY -->
-                <div class="form-group"
-                    ng-class="{ 'has-error' : userForm.country.$invalid && (userForm.country.$dirty || submitted)}">
-                    <label>Country</label>
-                    <select name="country" class="form-control" ng-model="user.country"
-                        ng-options="country.CountryId as country.Name for country in countryList" ng-required="true">
-                        <option value=''>Select</option>
-                    </select>
-                    <p ng-show="userForm.country.$error.required && (userForm.country.$dirty || submitted)"
-                        class="help-block">Select country.</p>
-                </div>
-
-                <!-- CITY -->
-                <div class="form-group"
-                    ng-class="{ 'has-error' : userForm.city.$invalid && (userForm.city.$dirty || submitted)}">
-                    <label>City</label>
-                    <select name="city" class="form-control" ng-model="user.city"
-                        ng-options="city.CityId as city.Name for city in cityList" ng-required="true">
-                        <option value=''>Select</option>
-                    </select>
-                    <p ng-show="userForm.city.$error.required && (userForm.city.$dirty || submitted)"
-                        class="help-block">Select city.</p>
-                </div>
 
                 <!-- TERMS & CONDITIONS -->
                 <div class="form-group"
